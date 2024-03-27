@@ -1,0 +1,135 @@
+/* =================
+   table of content
+   =================
+   1- Header Design
+   2- Button & icons
+   3- Model -> pop up
+   4- Responsive Design
+   
+   */
+/* ===================
+   1- Header Design
+======================*/
+
+header.flex {
+  justify-content: space-between;
+  padding: 0 2.4rem;
+  margin-top: 1rem;
+}
+header.flex nav {
+  background-color: var(--bgHeader);
+  padding: 0.8rem 1.7rem;
+  border-radius: 60px;
+  box-shadow: 1px 1px 40px #2323242a;
+}
+header ul.flex {
+  gap: 16px;
+}
+header ul li a {
+  color: var(--title);
+  opacity: 0.9;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+header ul li a:hover {
+  color: var(--blue);
+  font-size: 1.3rem;
+}
+header button.menu {
+  display: none;
+}
+/* ===================
+   2- Model -> pop up
+======================*/
+header .fixed {
+  position: fixed;
+  inset: 0;
+  z-index: 11;
+  background-color: rgba(43, 42, 42, 0.8);
+  backdrop-filter: blur(4px);
+}
+
+@keyframes model {
+  0% {
+    scale: 0;
+  }
+  70% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+header .fixed ul.model {
+  animation: model 0.7s 1;
+  width: 75%;
+  margin-inline: auto;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--bgHeader);
+}
+header .fixed ul.model li {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+header .fixed ul.model li:last-child {
+  border: none;
+}
+header .fixed ul.model li:first-child {
+  text-align: right;
+  border: none;
+  padding-bottom: 0rem;
+  padding-top: 0rem;
+  margin-bottom: -1rem;
+}
+
+/* ===================
+   3- Button & icons
+======================*/
+header .icon-menu,
+header button.mode {
+  background-color: var(--bgHeader);
+  height: 2.6rem;
+  width: 2.6rem;
+  border-radius: 50%;
+  justify-content: center;
+  text-align: center;
+  color: var(--subtitle);
+  border: 1px solid rgba(224, 161, 74, 0.2);
+  transition: 0.2s;
+  box-shadow: 1px 1px 20px var(--title);
+}
+header .icon-menu:hover,
+header button.mode:hover {
+  color: var(--title);
+  border: 1px solid rgba(224, 161, 74, 0.8);
+  font-size: 1.2rem;
+}
+header .icon-close {
+  margin-bottom: 1rem;
+  color: var(--subtitle);
+  transition: 0.2s;
+}
+header .icon-close:hover {
+  font-size: 1.2rem;
+  color: red;
+  rotate: 180deg;
+}
+header .icon-sun {
+  color: orange;
+}
+
+/* =======================
+   4- Responsive Design
+==========================*/
+@media (max-width: 700px) {
+  header.flex nav {
+    display: none;
+  }
+  header button.menu {
+    display: block;
+  }
+}

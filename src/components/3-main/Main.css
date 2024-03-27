@@ -1,0 +1,128 @@
+/* ===================
+   1- Left Section
+======================*/
+main.flex {
+  gap: 6rem;
+  align-items: start;
+}
+main section.left-section.flex {
+  flex-direction: column;
+  gap: 1.2rem;
+}
+main section.left-section.flex button {
+  background-color: rgba(36, 37, 46, 1);
+  width: 12rem;
+  padding: 1.2rem 0;
+  text-align: center;
+  font-size: 1.1rem;
+  opacity: 0.5;
+  border-radius: 8px;
+}
+main section.left-section.flex button.active {
+  opacity: 1;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  border: 1px solid var(--blue);
+}
+.light main section.left-section.flex button.active {
+  border: 1px solid #000;
+}
+main section.left-section.flex button:hover {
+  opacity: 1;
+  transition: 0.2s;
+}
+/* ===================
+   2- Right Section
+======================*/
+main section.right-section.flex {
+  flex-grow: 1;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+section article.card {
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.16), 1px 1px 1px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(93, 180, 252, 0.3);
+  border-radius: 5px;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.05)
+  );
+}
+.light section article.card {
+  border: none;
+}
+section article.card:hover {
+  transition: 0.3s;
+  border: 1px solid var(--blue);
+  background-color: var(--icon-hover);
+  rotate: 1deg;
+  scale: 1.2rem;
+  cursor: pointer;
+}
+section article.card img {
+  border-radius: 5px 5px 0px 0px;
+  width: 300px;
+}
+
+article.card .box {
+  padding: 1rem 0.6rem;
+  width: 300px;
+}
+article.card .box .title {
+  color: var(--title);
+  text-align: center;
+}
+article.card .box .subtitle {
+  color: var(--subtitle);
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 1.1rem 0rem;
+}
+article.card .box .icons {
+  justify-content: space-between;
+}
+.card .box .icons .icon-arrow-right,
+.icon-github {
+  font-size: 1.4rem;
+  color: var(--subtitle);
+}
+.card .box .icons .icon-arrow-right:hover,
+.icon-github:hover {
+  font-size: 1.6rem;
+  color: var(--blue);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.card .box .icons a {
+  color: var(--blue);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+  main.flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  main section.left-section.flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+  main section.left-section.flex button {
+    width: 6rem;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 320px) {
+  section article.card img {
+    width: 260px;
+  }
+  article.card .box {
+    width: 260px;
+  }
+}

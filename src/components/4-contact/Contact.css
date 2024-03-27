@@ -1,0 +1,117 @@
+section.contact-us .icon-envelope {
+  color: var(--subtitle);
+  margin-right: 1rem;
+}
+section.contact-us .title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--title);
+  margin-bottom: 1rem;
+}
+section.contact-us p.subtitle {
+  color: var(--subtitle);
+  line-height: 1.5rem;
+}
+section.contact-us form label {
+  color: var(--subtitle);
+  margin-right: 1rem;
+  cursor: pointer;
+}
+section.contact-us form #email,
+section.contact-us form #message {
+  all: unset;
+  background-color: rgba(63, 63, 70, 0.15);
+  border: 1px solid rgb(63, 63, 70);
+  width: 20rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.light section.contact-us form #email,
+.light section.contact-us form #message {
+  background-color: #eeeeee;
+  border: 1px solid rgb(132, 180, 222);
+  color: black;
+}
+section.contact-us form #message {
+  min-height: 8rem;
+  max-height: 16rem;
+  resize: vertical;
+}
+
+section.contact-us form .email {
+  margin-bottom: 1.3rem;
+}
+section.contact-us form #email:focus,
+section.contact-us form #message:focus {
+  border: 1px solid var(--blue);
+}
+section.contact-us form #email:hover,
+section.contact-us form #message:hover {
+  border: 1px solid var(--blue);
+  transition: 0.4s;
+}
+section.contact-us form .submit {
+  background-color: rgba(36, 37, 46, 1);
+  padding: 0.8rem 1rem;
+  font-size: 1.1rem;
+  opacity: 0.5;
+  width: 7.5rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  margin-right: 4rem;
+  text-align: center;
+  border: 1px solid rgb(116, 116, 121);
+}
+section.contact-us form .submit:hover {
+  border: 1px solid var(--blue);
+  scale: 1.2rem;
+  transition: 0.2s;
+}
+section.contact-us form {
+  flex-direction: column;
+}
+section.contact-us p {
+  margin-top: 1rem;
+  color: var(--subtitle);
+}
+section.contact-us .main {
+  justify-content: space-between;
+}
+@media (max-width: 1300px) {
+  .animation {
+    display: none;
+  }
+  section.contact-us p.subtitle {
+    margin-bottom: 1.5rem;
+  }
+}
+@media (max-width: 700px) {
+  section.contact-us .main {
+    justify-content: center;
+  }
+
+  section.contact-us form {
+    flex-direction: column;
+    width: 85%;
+  }
+  section.contact-us form .flex {
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+  }
+  section.contact-us form #email,
+  section.contact-us form #message {
+    width: calc(100% - 2rem);
+  }
+
+  section.contact-us form .submit {
+    width: 30%;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    align-self: center;
+  }
+  section.contact-us form label {
+    margin-bottom: 0.6rem;
+  }
+}

@@ -1,0 +1,68 @@
+section.hero {
+  margin-top: 3rem;
+}
+section.hero .left {
+  flex-grow: 1;
+}
+section.hero .parent-avatar {
+  align-items: end;
+  gap: 0.6rem;
+}
+section.hero .avatar {
+  width: 160px;
+  border-radius: 50%;
+  border: 1px solid var(--blue);
+  padding: 2px;
+  box-shadow: 2px 2px 10px gray;
+}
+section.hero .icon-verified {
+  color: var(--blue);
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+section.hero h1.title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-top: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--title);
+}
+section.hero p.subtitle {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--subtitle);
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+}
+section.hero .all-icons {
+  gap: 1.2rem;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  color: var(--subtitle);
+}
+section.hero .all-icons .icon:hover {
+  transition: 0.2s;
+  font-size: 1.9rem;
+  cursor: pointer;
+  color: var(--blue);
+}
+.section.hero .animation {
+  translate: 100px 50px;
+}
+section.hero .all-icons .icon {
+  color: var(--subtitle);
+}
+section div.left button.cv {
+  box-shadow: -1px 10px 25px rgba(235, 231, 231, 0.16),
+    1px 1px 1px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(93, 180, 252, 0.3);
+  border-radius: 5px;
+  width: 10rem;
+  padding: 0.5rem 0.8rem;
+  transition: transform 0.2s;
+  font-size: 1.2rem;
+  text-align: center;
+}
+section div.left button.cv:hover {
+  transform: scale(1.1);
+}
