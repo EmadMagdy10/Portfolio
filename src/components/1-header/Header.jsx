@@ -20,7 +20,9 @@ const Header = () => {
         const newTheme = theme === "dark" ? "light" : "dark";
         setTheme(newTheme);
     };
-
+    const handleLinkClick = () => {
+        setShowModel(false);
+    };
 
     return (
         <header className='flex'>
@@ -45,9 +47,9 @@ const Header = () => {
                     <div className='fixed'>
                         <ul className='model'>
                             <li><button className='icon-close' onClick={() => setShowModel(false)} /></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#projects" onClick={handleLinkClick}>Projects</a></li>
+                            <li><a href="#skills" onClick={handleLinkClick}>Skills</a></li>
+                            <li><a href="#contact-us-id" onClick={handleLinkClick}>Contact</a></li>
                         </ul>
                     </div>
                 )

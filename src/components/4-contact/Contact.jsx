@@ -7,7 +7,7 @@ export default function Contact() {
     const [state, handleSubmit] = useForm("xoqgkqqz");
 
     return (
-        <section className='contact-us' id='contact-us-id'>
+        <section className='contact-us' id="contact-us-id">
             <h1 className='title'>
                 <span className='icon-envelope'></span>Contact Us
             </h1>
