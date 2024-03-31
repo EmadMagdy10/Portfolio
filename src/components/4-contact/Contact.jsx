@@ -9,7 +9,7 @@ export default function Contact() {
     return (
         <section className='contact-us' id="contact-us-id">
             <h1 className='title'>
-                <span className='icon-envelope'></span>Contact Us
+                <span className='icon-envelope'></span>Contact Me
             </h1>
             <p className='subtitle'>Submit the form below to get in touch with me!</p>
             <div className="flex main">

@@ -29,14 +29,17 @@ export default function Hero() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 2 }}
-                    className='title'>I&apos;m a Back-End Developer</motion.h1>
+                    className='title'>Back-End Developer</motion.h1>
                 <p className='subtitle'>Recent computer science graduate with a strong back-end foundation seeking a junior software developer role. Passionate about software development, eager to contribute to high-quality solutions, and grow in a collaborative team.
                     Committed to learning and delivering value to the organization.</p>
 
                 <div className="all-icons flex">
-                    <a href="https://www.linkedin.com/in/3mad-magdy/" target="_blank" rel="noopener noreferrer" className="icon icon-linkedin"></a>
-                    <a href="https://www.instagram.com/3madmagdy?igsh=MWo0NmFyMXJ5cDc0MA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="icon icon-instagram"></a>
-                    <a href="https://github.com/EmadMagdy10" target="_blank" rel="noopener noreferrer" className="icon icon-github"></a>
+                    <div className=''>
+                        <a href="https://www.linkedin.com/in/3mad-magdy/" target="_blank" rel="noopener noreferrer" className="icon icon-linkedin"></a>
+                        <a href="https://www.instagram.com/3madmagdy?igsh=MWo0NmFyMXJ5cDc0MA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="icon icon-instagram"></a>
+                        <a href="https://github.com/EmadMagdy10" target="_blank" rel="noopener noreferrer" className="icon icon-github"></a>
+                    </div>
+
                     <div>
                     </div>
                     <div className='skill border-skill'>

@@ -50,6 +50,7 @@ section.hero .all-icons .icon:hover {
   translate: 100px 50px;
 }
 section.hero .all-icons .icon {
+  margin-right: 1rem;
   color: var(--subtitle);
 }
 section div.left button.cv {
@@ -65,4 +66,9 @@ section div.left button.cv {
 }
 section div.left button.cv:hover {
   transform: scale(1.1);
+}
+@media (max-width: 380px) {
+  section.hero .all-icons {
+    flex-direction: column;
+  }
 }

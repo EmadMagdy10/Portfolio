@@ -1,50 +1,33 @@
-
 import './Skill.css';
 
-export default function Skill() {
+const skillsData = [
+    { logo: "laravel-logo.png", name: "Laravel" },
+    { logo: "php-logo.png", name: "PHP" },
+    { logo: "mysql-logo.png", name: "MySQL" },
+    { logo: "react-logo.png", name: "React" },
+    { logo: "html-logo.png", name: "HTML" },
+    { logo: "css-logo.png", name: "CSS" },
+    { logo: "JavaScript_logo.png", name: "JavaScript" },
+    { logo: "Tailwind-logo.png", name: "Tailwind" },
+    { logo: "git-logo.png", name: "GitHub" }
+];
+
+const Skill = () => {
     return (
         <section className='skills' id='skills'>
             <h1 className='title'>
                 <span className='icon-lightbulb'></span>My Skills
             </h1>
-            <div className='flex'>
-                <div className='skill border-skill'>
-                    <img src="laravel-logo.png" alt="" />
-                    <p>Laravel</p>
-                </div>
-                <div className='skill border-skill'>
-                    <img src="php-logo.png" alt="" />
-                    <p>PHP</p>
-                </div>
-                <div className='skill border-skill'>
-                    <img src="mysql-logo.png" alt="" />
-                    <p>MySQL</p>
-                </div>
-                <div className='skill border-skill'>
-                    <img src="react-logo.png" alt="" />
-                    <p>React</p>
-                </div>
-                <div className='skill border-skill'>
-                    <img src="html-logo.png" alt="" />
-                    <p>HTML</p>
-                </div>
-                <div className='skill border-skill'>
-                    <img src="css-logo.png" alt="" />
-                    <p>CSS</p>
-                </div>
-                <div className='skill border-skill'>
-                    <img src="JavaScript_logo.png" alt="" />
-                    <p>JavaScript</p>
-                </div>
-                <div className='skill border-skill'>
-                    <img src="Tailwind-logo.png" alt="" />
-                    <p>Tailwind</p>
-                </div>
-                <div className='skill border-skill'>
-                    <img src="git-logo.png" alt="" />
-                    <p>GitHub</p>
-                </div>
+            <div className='flex scroll'>
+                {skillsData.map((skill, index) => (
+                    <div key={index} className='skill border-skill'>
+                        <img src={skill.logo} alt={skill.name} />
+                        <p>{skill.name}</p>
+                    </div>
+                ))}
             </div>
         </section>
-    )
-}
+    );
+};
+
+export default Skill;
