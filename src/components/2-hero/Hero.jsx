@@ -8,7 +8,7 @@ export default function Hero() {
 
     const handleDownload = () => {
         const downloadLink = document.createElement('a');
-        window.open('https://acrobat.adobe.com/id/urn:aaid:sc:EU:25fd624c-7215-48d3-9b5f-d97c53168249', '_blank');
+        window.open('https://acrobat.adobe.com/id/urn:aaid:sc:eu:11c5e657-91e8-4a14-8bce-7a04febc346c', '_blank');
         downloadLink.download = 'Your_CV_File.pdf';
         document.body.appendChild(downloadLink);
         downloadLink.click();
