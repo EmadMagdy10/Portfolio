@@ -5,6 +5,7 @@ import { AnimatePresence } from 'framer-motion';
 
 export default function Main() {
     const myProjects = [
+        { projectTitle: 'Talabat Clone', projectSubTitle: 'Laravel with blade', category: 'laravel', link: 'https://talabat-clone-production.up.railway.app/', imagePath: 'laravel.png' },
         { projectTitle: 'Money Transaction', projectSubTitle: 'Laravel with blade', category: 'laravel', link: 'https://github.com/EmadMagdy10/Transaction', imagePath: 'laravel.png' },
         { projectTitle: 'Management System', projectSubTitle: 'Laravel API With JWT', category: 'laravel', link: 'https://github.com/EmadMagdy10/Management-System', imagePath: 'jwt.png' },
         { projectTitle: 'PHP project', projectSubTitle: 'E-commerce', category: 'php', link: 'https://github.com/EmadMagdy10/e-commerce-', imagePath: 'php.png' },
